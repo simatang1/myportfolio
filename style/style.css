@@ -1,0 +1,304 @@
+/* home sectio start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+.btn:hover{
+background-color: rgb(20, 20, 20);
+font-family: 'Poppins', sans-serif;
+border-color: #f2f7f4;
+color: #eb0707;
+
+
+
+}
+.btn{
+    background-color: #dd0a51;
+    color: aliceblue;
+}
+.links{
+    display: flex;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: rgb(47, 3, 78);
+    width: 1000%;
+    height: 50px;
+    
+    margin-top: -10px;
+  
+} 
+.links a{
+    margin-bottom: 10px;
+}
+.sima a:hover{
+    transform: rotate(180deg);
+}
+.sima a span{
+    color: #eb0707;
+}
+.link{
+    display: flex;
+}
+.link a:hover{
+   text-decoration: none;
+    color: #984cd6;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* home section end */
+/* services section start */
+#section-home{
+    font-family: 'Poppins', sans-serif;
+    height: 500px;
+    background-color: rgb(3, 3, 51);
+}
+#about-section{
+    background-color: rgb(226, 226, 230);
+    margin-top: -5px;
+}
+
+.about{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    bottom: -20px;
+}
+.about::before{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 130px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.about::after{
+    content: "Who i am";
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    padding: 10px;
+    
+    font-size: 15px;
+    color: red;
+   ;
+    transform: translateX(-50%);
+}
+.works{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    margin-left: 55px;
+}
+.box,
+.inner{
+    background-color: gold;
+    width: 100px;
+    height: 400px;
+    transition: width 2s, height 2s, transform 2s;
+}
+.box:hover{
+    transform: rotate(10deg);
+}
+.inner{
+    width: 300px;
+    height: 400px; 
+    background-color: #984cd6
+
+}
+.inner a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* services section end */
+/* skills section start */
+.container-skills{
+    width: 100%;
+    height: 100vh;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills h3{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 36px;
+}
+.progress-bar{
+    background-color: #f7f7f7;
+    width: 1000px;
+    height: 50px;
+    border-radius: 5px;
+}
+.progress-bar div{
+    height: 17px;
+    border-radius: 5px;
+    width: 0%;
+}
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-design{
+    background: #e91e63;
+    animation: web-design 1s linear forwards;
+}
+.graphics{
+    background: #984cd6;
+    animation: graphics 1s linear forwards;
+}
+.photography{
+    background: #1e3de9;
+    animation: photography 1s linear forwards;
+}
+.audio-editing{
+    background: #1ee979;
+    animation: audio-editing 1s linear forwards;
+}
+.video-editing{
+    background: #1ee979;
+    animation: video-editing 1s linear forwards;
+}
+.animation{
+    background: #1ebae9;
+    animation: animation 1s linear forwards;
+}
+.web-design span{
+    border: 1px solid #e91e63;
+}
+.graphics span{
+    border: 1px solid #e91e63;
+}
+.photography span{
+    border: 1px solid #e91e63;
+}
+.audio-editing span{
+    border: 1px solid #e91e63;
+}
+.animation span{
+    border: 1px solid #e91e63;
+}
+.video-editing span{
+    border: 1px solid #e91e63;
+}
+@keyframes web-design{
+    100%{
+        width: 96%;
+    }
+}
+@keyframes graphics{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes photography{
+    100%{
+        width: 95%;
+    }
+}
+@keyframes audio-editing{
+    100%{
+        width: 88%;
+    }
+}
+@keyframes animation{
+    100%{
+        width: 92%;
+    }
+}
+@keyframes video-editing{
+    100%{
+        width: 95%;
+    }
+}
+/* skills section end */
+/* sample section start */
+.works .card:hover{
+    border: 1px solid goldenrod;
+}
+/* portfolio section start */
+.images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    overflow: hidden;
+}
+.images img{
+    width: 30vw;
+    height: 20vw;
+    transition: all 1.4s ease;
+}
+.img:hover{
+    transform: scale(1.2);
+}
+.images2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    overflow: hidden;
+}
+.images2 img{
+    width: 30vw;
+    height: 20vw;
+    transition: all 1.4s ease;
+}
+.img:hover{
+    transform: scale(1.14);
+}
+/* portfolio section end */
+/* accordion section start */
+.accordion-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.accordion-items .accordion-item{
+    margin: 10px;
+}
+/* footer section start */
+.footer{
+    background: navy;
+}
+.footer .footer-item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.footer .footer-item .personal-info{
+    margin-left: 30px;
+}
+.footer .footer-item .footer-link a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.footer .footer-item .privacy a{
+text-decoration: none;
+color: white;
+display: block;
+}
+.footer .footer-item .privacy a:hover{
+text-decoration: underline;
+color: goldenrod;
+}
+.footer .footer-item .contact p{
+    color: #ffffff;
+}
+hr{
+    color: #f7f7f7;
+}
