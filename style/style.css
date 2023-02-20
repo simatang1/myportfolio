@@ -270,7 +270,7 @@ color: #eb0707;
 }
 /* footer section start */
 .footer{
-    background: navy;
+    background: rgb(5, 5, 53);
 }
 .footer .footer-item{
     display: grid;
