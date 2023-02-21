@@ -22,8 +22,18 @@ color: #eb0707;
     height: 50px;
     
     margin-top: -10px;
+    margin-bottom: 50px;
   
 } 
+.size img{
+    width: 600px;
+}
+.home-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: left;
+    margin-left: -80px;
+}
 .links a{
     margin-bottom: 10px;
 }
@@ -52,6 +62,10 @@ color: #eb0707;
 #about-section{
     background-color: rgb(226, 226, 230);
     margin-top: -5px;
+    padding-bottom: 20px;
+   
+   
+
 }
 
 .about{
@@ -60,14 +74,17 @@ color: #eb0707;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    bottom: -20px;
+    bottom: -50px;
+    margin-bottom: 60px;
+    
+    
 }
 .about::before{
     content: "";
     position: absolute;
     bottom: 0%;
     left: 50%;
-    width: 130px;
+    width: 145px;
     height: 3px;
     background: black;
     transform: translateX(-50%);
@@ -84,26 +101,71 @@ color: #eb0707;
    ;
     transform: translateX(-50%);
 }
+.service{
+    margin-bottom: 40px;
+    bottom: -600px;
+    padding-bottom: 50px;
+}
+
 .works{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-    margin-left: 55px;
 }
-.box,
-.inner{
-    background-color: gold;
-    width: 100px;
-    height: 400px;
-    transition: width 2s, height 2s, transform 2s;
+.container-work{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
 }
-.box:hover{
+.boxes{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.box{
+    width: 250px;
+    height: 380px;
+   text-align: center;
+}
+.box.one{
+    background-color: rgb(99, 10, 107);
+    z-index: 1;
+    color: azure;
+}
+.box.one img{
+    width: 250px;
+    height: 150px;
+}
+.box.one a{
+    text-decoration: none;
+    color: white;
+    background: #06148b;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+.box.one a:hover{
+    background: rgb(2, 2, 2);
+    color: rgb(190, 8, 8);
+    border: 2px solid #1ebae9;
+}
+.box.two{
+    position: absolute;
+    background-color: rgb(245, 229, 11);
+    z-index: 0;
+    transition: transform 2s;
+}
+.box.one:hover + .box.two{
     transform: rotate(10deg);
 }
 .inner{
     width: 300px;
     height: 400px; 
-    background-color: #984cd6
+    background-color: #984cd6;
 
 }
 .inner a{
@@ -119,6 +181,8 @@ color: #eb0707;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: -60px;
+    padding-bottom: -50px;
 }
 .skills h3{
     font-weight: 400;
@@ -153,11 +217,11 @@ color: #eb0707;
     align-items: center;
 }
 .web-design{
-    background: #e91e63;
+    background: #e93e0a;
     animation: web-design 1s linear forwards;
 }
 .graphics{
-    background: #984cd6;
+    background: #7f09e0;
     animation: graphics 1s linear forwards;
 }
 .photography{
@@ -165,15 +229,15 @@ color: #eb0707;
     animation: photography 1s linear forwards;
 }
 .audio-editing{
-    background: #1ee979;
+    background: #ce0aa3;
     animation: audio-editing 1s linear forwards;
 }
 .video-editing{
-    background: #1ee979;
+    background: #c9ec04;
     animation: video-editing 1s linear forwards;
 }
 .animation{
-    background: #1ebae9;
+    background: #0eeb06;
     animation: animation 1s linear forwards;
 }
 .web-design span{
@@ -196,17 +260,17 @@ color: #eb0707;
 }
 @keyframes web-design{
     100%{
-        width: 96%;
+        width: 90%;
     }
 }
 @keyframes graphics{
     100%{
-        width: 90%;
+        width: 95%;
     }
 }
 @keyframes photography{
     100%{
-        width: 95%;
+        width: 90%;
     }
 }
 @keyframes audio-editing{
@@ -216,12 +280,12 @@ color: #eb0707;
 }
 @keyframes animation{
     100%{
-        width: 92%;
+        width: 96%;
     }
 }
 @keyframes video-editing{
     100%{
-        width: 95%;
+        width: 92%;
     }
 }
 /* skills section end */
@@ -230,6 +294,9 @@ color: #eb0707;
     border: 1px solid goldenrod;
 }
 /* portfolio section start */
+.top{
+    margin-bottom: 30px;
+}
 .images{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -260,6 +327,7 @@ color: #eb0707;
 }
 /* portfolio section end */
 /* accordion section start */
+
 .accordion-items{
     display: flex;
     flex-direction: column;
