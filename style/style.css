@@ -295,7 +295,7 @@ color: #eb0707;
 }
 /* portfolio section start */
 .top{
-    margin-bottom: 30px;
+    margin-bottom: -30px;
 }
 .images{
     display: grid;
